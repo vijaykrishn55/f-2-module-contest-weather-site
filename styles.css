@@ -2,14 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(38,41,75);
+   background-color: rgb(38 40 56);
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    
+    background-color: rgb(44 47 84);
+    height: 100%;
+   
+    border-radius: 55px;
 }
 
 .input-container {
@@ -30,31 +33,51 @@ body {
     font-size: 20px;
     width: 700px;
     height: 35px;
+    background-color: rgb(44 47 84);
+    color: white;
+    /* border-style: none; */
+    border: 0.5px solid #585884;
+    border-radius: 55px;
+    text-indent: 10px;
 }
 .head-title{
     color: white;
     font-weight: 800;
     text-align: center;
+    font-size: 40px;
 }
 .input-container button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4A397F;
+    background-color: #6c5e96;
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 110px;
+    border-radius: 55px;
+    transition: all 0.3s ease;
+}
+#addButton:hover{
+    scale: 1.03;
 }
 #weatherCards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    padding: 0px 15px 0px 70px;
 }
 #cards{
     
     display: flex;
     height: 175px;
-    width: 300px;
+    width: 315px;
     background-image: url(imges/Rectangle\ 1.png);
     color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0px 0px 35px;
+}
+#cards:hover{
+    scale: 1.03;
 }
 #details{
     width: 140px;
