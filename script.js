@@ -4,10 +4,19 @@ let city_input=document.getElementById("cityInput");
 let add_btn=document.getElementById("addButton");
 
 add_btn.addEventListener("click",()=>{
+    if (city_input.value===''){
+        alert("Please Enter an Valid Input");
+
+    }else{
     let city_name=city_input.value.trim();
     getData(city_name);
     city_input.value="";
+    }
 })
+function call_alert(){
+    let call=document.getElementById("call-alert");
+    
+}
 async function getData(city_name){
     const base_url=`https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${api_key}&units=metric`;
     const response= await fetch(base_url);
